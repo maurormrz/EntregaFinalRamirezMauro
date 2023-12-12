@@ -33,13 +33,20 @@
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="carritoDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-cart"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="carritoDropdown">
-                            <!-- Aquí se agregarán los elementos del carrito -->
-                            <li><a class="dropdown-item" href="#">Producto 1</a></li>
-                            <li><a class="dropdown-item" href="#">Producto 2</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Total: $100</a></li>
-                            <li><a class="dropdown-item" href="#">Ir al carrito</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="carritoDropdown" id="carritoDropdownContent">
+                            <li class="dropdown-item">
+                                <!-- Carrito -->
+                                <div>
+                                    <h2>Carrito</h2>
+                                    <!-- Elementos del carrito -->
+                                    <ul id="carritoItems" class="list-group"></ul>
+                                    <hr>
+                                    <!-- Precio total -->
+                                    <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                                    <button id="botonVaciar" class="btn btn-danger">Vaciar</button>
+                                    <button id="botonComprar" class="btn btn-primary">Comprar</button>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
