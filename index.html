@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAMIREZ TVs</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" integrity="sha256-ZCK10swXv9CN059AmZf9UzWpJS34XvilDMJ79K+WOgc=" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
@@ -14,14 +15,22 @@
         <nav class="navbar fixed-top border-bottom border-body">
             <div class="container-fluid">
                 <div class="me-auto">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filtro</button>
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filtro</button>
                     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Televisores</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                    <hr>
+                    <p><a href="">TV Plasma 32"</a></p>
+                    <hr>
+                    <p><a href="">TV LCD 32"</a></p>
+                    <hr>
+                    <p><a href="">TV LED 55"</a></p>
+                    <hr>
+                    <p><a href="">TV OLED 85"</a></p>
+                    <hr>
                     </div>
                     </div>
                 </div>
@@ -42,7 +51,7 @@
                                     <ul id="carritoItems" class="list-group"></ul>
                                     <hr>
                                     <!-- Precio total -->
-                                    <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                                    <p class="text-right">Total: <span id="total"></span>&dollar;</p>
                                     <button id="botonVaciar" class="btn btn-danger">Vaciar</button>
                                     <button id="botonComprar" class="btn btn-primary">Comprar</button>
                                 </div>
@@ -60,7 +69,7 @@
                 <div class="col">
                     <div class="presentacion">
                         <h1 class="titulo">Bienvenidos a RAMIREZ TV's</h1>
-                        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facilis corrupti vitae enim harum sed voluptate, at commodi repellendus est aliquam consequuntur odit aut itaque voluptatibus, amet delectus assumenda laboriosam aliquid deleniti perferendis praesentium? A atque esse sint, asperiores placeat molestiae recusandae sed animi, quos voluptatem delectus. In odit eligendi omnis qui maxime quo consequuntur porro animi nisi explicabo vel veniam nemo aperiam necessitatibus rem, sed corporis maiores eveniet sunt! Rerum cupiditate aliquam animi iste ipsam porro eos voluptatibus inventore quam laudantium? Quia quas, doloremque corporis iusto sit non rem? Odio tempore non quos vero similique quam iste doloremque provident?</p>
+                        <p class="descripcion">Explora la tecnología de entretenimiento: mira nuestra colección de TVs de última generación para una experiencia visual inigualable. Descubre una experiencia visual sin igual con nuestra colección de televisores de última generación.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -70,7 +79,7 @@
                             <img src="images/plasma.jpg" class="card-img-top" alt="plasma">
                             <div class="card-body text-center">
                               <h5 class="card-title">TV Plasma</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">32 Pulgadas</p><p class="card-text">Precio: $30.000</p>
                               <a href="#" class="btn btn-primary mx-auto">Añadir al carrito</a>
                             </div>
                         </div>
@@ -81,7 +90,7 @@
                             <img src="images/lcd.jpg" class="card-img-top" alt="lcd">
                             <div class="card-body text-center">
                               <h5 class="card-title">TV LCD</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">32 Pulgadas</p><p class="card-text">Precio: $60.000</p>
                               <a href="#" class="btn btn-primary mx-auto">Añadir al carrito</a>
                             </div>
                         </div>
@@ -98,7 +107,7 @@
                             <img src="images/led.png" class="card-img-top" alt="led">
                             <div class="card-body text-center">
                               <h5 class="card-title">TV LED</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">55 Pulgadas</p><p class="card-text">Precio: $140.000</p>
                               <a href="#" class="btn btn-primary mx-auto">Añadir al carrito</a>
                             </div>
                         </div>
@@ -109,7 +118,7 @@
                             <img src="images/oled.jpg" class="card-img-top" alt="oled">
                             <div class="card-body text-center">
                               <h5 class="card-title">TV OLED</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">85 Pulgadas</p><p class="card-text">Precio: $500.000</p>
                               <a href="#" class="btn btn-primary mx-auto">Añadir al carrito</a>
                             </div>
                         </div>
@@ -127,32 +136,26 @@
         <div class="container p-4">
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Footer text</h5>
-      
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                voluptatem veniam, est atque cumque eum delectus sint!
-              </p>
+                <h5 class="text-uppercase text-center">Descubre Nuestra Colección</h5>
+                <p class="text-center">
+                    Explora nuestra amplia selección de televisores de última generación y lleva la experiencia visual a un nivel superior.
+                </p>
             </div>
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Footer text</h5>
-      
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                voluptatem veniam, est atque cumque eum delectus sint!
-              </p>
+                <h5 class="text-uppercase text-center">Contacto y Soporte</h5>
+                <p class="text-center">
+                    ¿Necesitas ayuda para elegir el televisor perfecto? Contáctanos en support@ramireztvs.com o llámanos al +123 456 7890.
+                </p>
             </div>
           </div>
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2020 Copyright:
-          <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          <p class="footer-text">© 2023 Copyright: Mauro Nahuel Ramirez</p>
         </div>
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js" integrity="sha256-IW9RTty6djbi3+dyypxajC14pE6ZrP53DLfY9w40Xn4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
