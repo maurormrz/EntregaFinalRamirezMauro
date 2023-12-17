@@ -62,14 +62,14 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-.offcanvas-body a {
+.offcanvas-body p {
     text-decoration: none;
     color: #333; 
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.offcanvas-body a:hover {
+.offcanvas-body p:hover {
     color: #007bff; 
 }
 
@@ -79,7 +79,7 @@ footer {
     border-top: 1px solid #a1a1a1; 
 }
 
-.offcanvas-body a.active {
+.offcanvas-body p.active {
     font-weight: bold;
     color: #007bff; 
 }
