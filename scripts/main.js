@@ -17,3 +17,11 @@ document.querySelectorAll('.tv-type').forEach(function (element) {
         });
     });
 });
+
+function agregarAlCarrito(producto) {
+    // Aquí debes implementar la lógica para agregar el producto al carrito
+    // Puedes utilizar el identificador único (estos son 'plasma', 'lcd', 'led', 'oled') para identificar el producto específico
+    // Puedes llamar a funciones o realizar operaciones adicionales según sea necesario
+    console.log('Añadir al carrito:', producto);
+    // Llama a tu función existente para agregar al carrito o implementa la lógica aquí
+};
