@@ -56,6 +56,10 @@ footer {
     font-size: 30px;
 }
 
+.offcanvas-subtitle {
+    font-size: 17px;
+}
+
 .offcanvas-body {
     padding: 20px;
     background-color: #f8f8f8;
@@ -71,6 +75,7 @@ footer {
 
 .offcanvas-body p:hover {
     color: #007bff; 
+    cursor: default;
 }
 
 .offcanvas-body hr {
