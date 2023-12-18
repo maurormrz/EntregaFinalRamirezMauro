@@ -77,7 +77,7 @@ function actualizarCarrito() {
   });
 
   // Actualizar el total
-  totalElement.textContent = total.toFixed(2);
+  totalElement.textContent = `$${total.toFixed(2)}`;
 }
 
 // Función para quitar un producto del carrito
