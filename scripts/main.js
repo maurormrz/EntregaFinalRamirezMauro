@@ -90,8 +90,9 @@ function vaciarCarrito() {
 
 function comprar() {
   if (carrito.length > 0) {
-    // Redirigir a la página index2.html
-    window.location.href = "index2.html";
+    // Redirigir a la página index2.html con el total como parámetro de consulta
+    const totalCarrito = carrito.reduce((total, producto) => total + producto.precio, 0);
+    window.location.href = `index2.html?total=${totalCarrito}`;
   } else {
     // Mostrar alerta si el carrito está vacío
     Swal.fire({title: "Carrito vacío", text: "Añade productos al carrito antes de comprar.", icon: "warning", timer: 1000, showConfirmButton: false});
