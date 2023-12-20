@@ -31,7 +31,30 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-
+                    <div>
+                        <h2>Calculadora de Cuotas</h2>
+                        <form id="cuotasForm">
+                          <label>
+                            <input type="radio" name="cuotas" value="1" checked>
+                            1 Pago
+                          </label>
+                          <label>
+                            <input type="radio" name="cuotas" value="6">
+                            6 Cuotas
+                          </label>
+                          <label>
+                            <input type="radio" name="cuotas" value="12">
+                            12 Cuotas
+                          </label>
+                    
+                          <p id="precioCalculado">Total: $<span id="precioTotal"></span></p>
+                    
+                          <label for="correo">Correo:</label>
+                          <input type="email" id="correo" required>
+                    
+                          <button type="button" id="completarPago">Completar Pago</button>
+                        </form>
+                      </div>
                 </div>
             </div>
         </div>
