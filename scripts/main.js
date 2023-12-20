@@ -88,6 +88,16 @@ function vaciarCarrito() {
   actualizarSessionStorage();
 }
 
+function comprar() {
+  if (carrito.length > 0) {
+    // Redirigir a la página index2.html
+    window.location.href = "index2.html";
+  } else {
+    // Mostrar alerta si el carrito está vacío
+    Swal.fire({title: "Carrito vacío", text: "Añade productos al carrito antes de comprar.", icon: "warning", timer: 1000, showConfirmButton: false});
+  }
+}
+
 // Función para actualizar SessionStorage
 function actualizarSessionStorage() {
   sessionStorage.setItem('carrito', JSON.stringify(carrito));
@@ -95,6 +105,7 @@ function actualizarSessionStorage() {
 
 // Event listeners
 document.getElementById("botonVaciar").addEventListener("click", vaciarCarrito);
+document.getElementById("botonComprar").addEventListener("click", comprar);
 
 // Opiniones de Usuarios
 document.addEventListener('DOMContentLoaded', cargarOpiniones);
