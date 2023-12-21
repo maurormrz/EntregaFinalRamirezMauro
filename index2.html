@@ -30,9 +30,11 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <div>
-                        <h2>Calculadora de Cuotas</h2>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="formulario">
+                        <h2 class="tituloformulario">CALCULADORA DE CUOTAS</h2>
+                        <p class="texto">Elige el metodo de pago a realizar:</p>
                         <form id="cuotasForm">
                           <label>
                             <input type="radio" name="cuotas" value="1" checked>
@@ -46,16 +48,18 @@
                             <input type="radio" name="cuotas" value="12">
                             12 Cuotas
                           </label>
-                    
+
+                          <div class="espacio2"></div>
+                          
                           <p id="precioCalculado">Total: $<span id="precioTotal"></span></p>
                     
-                          <label for="correo">Correo:</label>
-                          <input type="email" id="correo" required>
-                    
+                          <label for="correo" class="texto">Ingresa tu Correo Electrónico:</label><br><div class="espacio2"></div>
+                          <input type="email" id="correo" placeholder="ejemplo@email.com" required><br>
                           <button type="button" id="completarPago">Completar Pago</button>
                         </form>
                       </div>
                 </div>
+                <div class="col-2"></div>
             </div>
         </div>
     </main>
