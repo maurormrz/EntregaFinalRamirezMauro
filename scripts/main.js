@@ -1,7 +1,5 @@
-// Carrito de compras
 let carrito = JSON.parse(sessionStorage.getItem('carrito')) || [];
 
-// Cargar carrito desde SessionStorage al cargar la página
 carrito = JSON.parse(sessionStorage.getItem('carrito')) || [];
 actualizarCarrito();
 
@@ -90,7 +88,7 @@ function vaciarCarrito() {
 
 function comprar() {
   if (carrito.length > 0) {
-    // Redirigir a la página index2.html con el total como parámetro de consulta
+    // Redirigir a la página index2.html
     const totalCarrito = carrito.reduce((total, producto) => total + producto.precio, 0);
     window.location.href = `index2.html?total=${totalCarrito}`;
   } else {
